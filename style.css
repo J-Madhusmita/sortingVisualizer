@@ -124,3 +124,10 @@ footer {
     color: white;
     transition: all 0.4s ease-out;
   }
+  .cell.min {
+    background-color: #ff1493;
+    border-color: #ff1493;
+    color: white;
+    transition: all 0.4s ease-out;
+ }
+  

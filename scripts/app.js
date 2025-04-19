@@ -11,17 +11,10 @@ const start = async () => {
     return;
   }
 
-//   let algorithm = new sortAlgorithms(speedValue);
-//   if (algoValue === 1) await algorithm.BubbleSort();
-console.log("Sorting start");
-let algorithm = new sortAlgorithms(speedValue);
-if (algoValue === 1) {
-  console.log("Bubble sort called");
-  await algorithm.BubbleSort();
-}
-console.log("Sorting end");
-
-  
+  let algorithm = new sortAlgorithms(speedValue);
+  if (algoValue === 1) await algorithm.BubbleSort();
+  if (algoValue === 2) await algorithm.SelectionSort();
+  if (algoValue === 3) await algorithm.InsertionSort();
 }
 
 const RenderScreen = async () => {
