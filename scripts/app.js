@@ -15,6 +15,8 @@ const start = async () => {
   if (algoValue === 1) await algorithm.BubbleSort();
   if (algoValue === 2) await algorithm.SelectionSort();
   if (algoValue === 3) await algorithm.InsertionSort();
+  if (algoValue === 4) await algorithm.MergeSort();
+  if (algoValue === 5) await algorithm.QuickSort();
 }
 
 const RenderScreen = async () => {
@@ -65,4 +67,5 @@ const response = () => {
 
 document.querySelector(".start").addEventListener("click", start);
 document.querySelector(".size-menu").addEventListener("change", RenderScreen);
-document.querySelector(".algo-menu").addEventListener("change", RenderScreen);
+// document.querySelector(".algo-menu").addEventListener("change", RenderScreen);
+window.onload = RenderScreen;
